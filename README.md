@@ -38,56 +38,6 @@ Loan rejected: The company had rejected the loan (because the candidate does not
 Since the loan was rejected, there is no transactional history of those applicants with the company and so this data is not available with the company (and thus in this dataset)
 
 
-
-SNAPSHOT OF DATASET
-
- 
- 
-DATA DICTIONARY
-LoanStatNew		Data type	Description
-addr_state		object	The state provided by the borrower in the loan application
-annual_inc		float64	The self-reported annual income provided by the borrower during registration.
-collection_recovery_fee		float64	post charge off collection fee
-delinq_2yrs		int64	The number of 30+ days past-due incidences of delinquency in the borrower's credit file for the past 2 years
-dti		float64	A ratio calculated using the borrower’s total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower’s self-reported monthly income.
-earliest_cr_line		object	The month the borrower's earliest reported credit line was opened
-emp_length		int64	Employment length in years. Possible values are between 0 and 10 where 0 means less than one year and 10 means ten or more years.
-emp_title		object	The job title supplied by the Borrower when applying for the loan.*
-funded_amnt		int64	The total amount committed to that loan at that point in time.
-funded_amnt_inv		float64	The total amount committed by investors for that loan at that point in time.
-grade		object	LC assigned loan grade
-home_ownership		object	The home ownership status provided by the borrower during registration. Our values are: RENT, OWN, MORTGAGE, OTHER.
-inq_last_6mths		int64	The number of inquiries in past 6 months (excluding auto and mortgage inquiries)
-installment		float64	The monthly payment owed by the borrower if the loan originates.
-int_rate		float64	Interest Rate on the loan
-issue_d		object	The month which the loan was funded
-last_credit_pull_d		object	The most recent month LC pulled credit for this loan
-last_pymnt_amnt		float64	Last total payment amount received
-last_pymnt_d		object	Last month payment was received
-loan_amnt		int64	The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.
-loan_status		object	Current status of the loan
-open_acc		int64	The number of open credit lines in the borrower's credit file.
-out_prncp		float64	Remaining outstanding principal for total amount funded
-out_prncp_inv		float64	Remaining outstanding principal for portion of total amount funded by investors
-pub_rec		int64	Number of derogatory public records
-pub_rec_bankruptcies		object	Number of public record bankruptcies
-purpose		object	A category provided by the borrower for the loan request.
-recoveries		float64	post charge off gross recovery
-revol_bal		int64	Total credit revolving balance
-revol_util		float64	Revolving line utilization rate, or the amount of credit the borrower is using relative to all available revolving credit.
-sub_grade		object	LC assigned loan subgrade
-term		object	The number of payments on the loan. Values are in months and can be either 36 or 60.
-title		object	The loan title provided by the borrower
-total_acc		int64	The total number of credit lines currently in the borrower's credit file
-total_pymnt		float64	Payments received to date for total amount funded
-total_pymnt_inv		float64	Payments received to date for portion of total amount funded by investors
-total_rec_int		float64	Interest received to date
-total_rec_late_fee		float64	Late fees received to date
-total_rec_prncp		float64	Principal received to date
-verification_status		object	Indicates if income was verified by LC, not verified, or if the income source was verified
-zip_code		object	The first 3 numbers of the zip code provided by the borrower in the loan application.
-
-
 CONTENTS OF CODE
 
 1.	Data Loading and Preprocessing:
